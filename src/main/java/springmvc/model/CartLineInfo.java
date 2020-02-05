@@ -1,0 +1,36 @@
+package springmvc.model;
+
+public class CartLineInfo {
+
+  private ProductInfo productInfo;
+  private int quantity;
+
+  public CartLineInfo() {
+    this.quantity = 0;
+  }
+
+  public ProductInfo getProductInfo() {
+    return productInfo;
+  }
+
+  public void setProductInfo(ProductInfo productInfo) {
+    this.productInfo = productInfo;
+  }
+
+  public int getQuantity() {
+    return quantity;
+  }
+
+  public void setQuantity(int quantity) {
+    this.quantity = quantity;
+  }
+
+  public float getAmount() {
+    return this.productInfo.getProductPrice() * this.quantity;
+  }
+
+  public CartLineInfo(ProductInfo productInfo, int quantity) {
+    this.productInfo = productInfo;
+    this.quantity = quantity;
+  }
+}
