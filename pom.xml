@@ -21,7 +21,7 @@
         <mysql.version>8.0.15</mysql.version>
         <slf4j.version>1.7.25</slf4j.version>
         <logback.version>1.2.3</logback.version>
-        <springSecurity.version>5.1.2.RELEASE</springSecurity.version>
+        <springSecurity.version>5.2.10.RELEASE</springSecurity.version>
     </properties>
 
     <dependencies>
